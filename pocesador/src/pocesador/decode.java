@@ -11,23 +11,37 @@ package pocesador;
  */
 public class decode {
 
-    public decode() {
-
-    }
-    private String Alu_ctr;
-    private String Cond;
-    private String Opcode;
+    private String Alu_ctr = "";
+    private String Cond = "";
+    private String Opcode = "";
     private boolean Sel_b = false;
-    private boolean Sel_dt;
+    private boolean Sel_dt = false;
     private boolean We_c = false;
     private boolean We_mem = false;
     private boolean Compara = false;
     
-    private String DirA[] = new String[8];
-    private String DirB[] = new String[8];
+    private String DirA[];
+    private String DirB[];
 
-    private String Rr;
-    private String Ext;
+    private String Rr = "";
+    private String Ext = "";
+    public decode() {
+        Alu_ctr = "";
+    Cond = "";
+    Opcode = "";
+    Sel_b = false;
+    Sel_dt = false;
+    We_c = false;
+    We_mem = false;
+    Compara = false;
+    
+    DirA = new String[8];
+    DirB = new String[8];
+
+    Rr = "";
+    Ext = "";
+    }
+    
 
     public void ingresar(String alu_ctr, boolean sel_b, boolean sel_dt,
             boolean we_c, boolean we_mem, String dirA[], String dirB[],

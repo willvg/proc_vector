@@ -26,8 +26,8 @@ public class alu {
         int val1  = Integer.parseInt(a,2);
         int val2  = Integer.parseInt(b,2);
         
-        //System.out.println("a :" + val1);
-        //System.out.println("b :" + val2);
+        //System.out.println("a int :" + val1);
+        //System.out.println("b int :" + val2);
         int result = 0;
         
         if(operando.equals("0000") || operando.equals("0001")){
